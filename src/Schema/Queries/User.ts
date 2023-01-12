@@ -7,9 +7,7 @@ import {
 import { resolve } from 'path';
 import { UserType } from '../TypeDefs/User';
 import { Users } from '../../Entities/User';
-import { MessageType } from '../TypeDefs/Message';
-// import { AppDataSource } from '../../index';
-// const userRepository = AppDataSource.getRepository(Users);
+
 export const GET_ALL_USERS = {
   type: new GraphQLList(UserType),
   resolve() {
